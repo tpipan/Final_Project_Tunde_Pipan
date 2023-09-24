@@ -22,6 +22,12 @@ public class SearchPage {
     @FindBy(css = ".products-grid li.item:first-of-type .product-box .product-name a")
     public WebElement firstSearchElement;
 
+    @FindBy(css = ".products-grid li.item:first-of-type a.link-wishlist")
+    public WebElement wishlistButton;
+
+    @FindBy(css = ".ajaxcart-modal-dialog .ajaxcart-modal-body h4")
+    public WebElement wishlistAuthenticationText;
+
     @FindAll(
             @FindBy(css = ".products-grid li")
     )

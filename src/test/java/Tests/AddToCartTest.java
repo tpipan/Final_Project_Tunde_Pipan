@@ -57,7 +57,6 @@ public class AddToCartTest extends BaseTest {
 
         ProductPage productPage = new ProductPage(driver);
 
-        // verificam daca titlul produsului din lista de produse este acelasi cu titlul produsului din pagina lui
         Assert.assertEquals(productPage.getProductTitle(), productTitle);
 
         productPage.selectSizeButton.click();
