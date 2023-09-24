@@ -34,7 +34,6 @@ public class MainPage {
     }
 
     public boolean searchInputIsDisplayed() {
-        this.driver = driver;
         wait.until(ExpectedConditions.visibilityOf(searchInput));
         return searchInput.isDisplayed();
     }
@@ -46,8 +45,8 @@ public class MainPage {
         submitButton.click();
     }
 
-    public String breadcrumbText() {
-        return breadcrumbs.getText();
-    }
+//    public String breadcrumbText() {
+//        return breadcrumbs.getText();
+//    }
 
 }
