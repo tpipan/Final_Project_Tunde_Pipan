@@ -1,0 +1,11 @@
+<registerModel>
+    <account>
+        <firstName>Ion</firstName>
+        <lastName>Gheorghe</lastName>
+        <emailAddress>pass1</emailAddress>
+        <password>pass1</password>
+        <confirmPassword>pass1</confirmPassword>
+
+    </account>
+
+</registerModel>
