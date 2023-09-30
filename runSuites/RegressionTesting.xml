@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Tests">
+    <test thread-count="5" name="Final_Project_Tunde_Pipan">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="runSuites.RegressionTesting"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,23 @@
+[
+  {
+    "account": {
+      "firstName": "Ion",
+      "lastName": "Gheorghe",
+      "emailAddress": "asd",
+      "password": "parolaparola",
+      "confirmPassword": "parolaparola"
+    },
+    "emailError": "Introduceți o adresă de e-mail corectă. De exemplu ionpopescu@domeniu.ro."
+  },
+
+  {
+    "account": {
+      "firstName": "Petru",
+      "lastName": "Gheorghe",
+      "emailAddress": "test@google.com",
+      "password": "parolaparola",
+      "confirmPassword": "parolaparola"
+    },
+    "emailError": "Acesta este un câmp obligatoriu."
+  }
+]

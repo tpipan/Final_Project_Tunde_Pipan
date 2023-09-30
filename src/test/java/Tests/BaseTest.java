@@ -1,10 +1,12 @@
 package Tests;
 
 
+import PageObjects.MainPage;
 import Utils.BrowserUtils;
 import Utils.ConfigUtils;
 import Utils.ConstantUtils;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -29,6 +31,12 @@ public class BaseTest {
             browser = ConfigUtils.getGenericElement(ConstantUtils.CONFIG_FILE, "browser");
         System.out.println("Set up webdriver for browser:" + browser);
         driver = BrowserUtils.getBrowser(browser);
+    }
+
+    public void goToRegisterPage(){
+        MainPage.myAccountIcon.click();
+        Assert.assertTrue(MainPage.registerButtonIsDisplayed);
+
     }
 
     @BeforeMethod

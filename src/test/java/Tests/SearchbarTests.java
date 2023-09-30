@@ -6,7 +6,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SearchbarTests extends BaseTest{
+public class SearchbarTests extends BaseTest {
     MainPage mainPage;
     @Test
     public void searchFunctionalityTest() {

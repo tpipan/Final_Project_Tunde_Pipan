@@ -12,7 +12,7 @@ import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 
 public class BrowserUtils {
-    static WebDriver driver;
+    public static WebDriver driver;
     static WebDriverWait wait;
 
     public static WebDriver getBrowser(String browser) {
