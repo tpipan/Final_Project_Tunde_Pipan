@@ -14,6 +14,7 @@ public class MainPage {
 
     public static boolean registerButtonIsDisplayed;
 
+
     WebDriver driver;
     WebDriverWait wait;
 
@@ -32,6 +33,9 @@ public class MainPage {
     public WebElement loginButton;
     @FindBy(css = ".mini-account a#noaccount")
     public WebElement registerButton;
+
+    @FindBy(css = ".mini-account a.login-btn")
+    public WebElement LoginButtonMyAccount;
 
     @FindBy(id = "firstname")
     public WebElement firstname;
@@ -72,8 +76,16 @@ public class MainPage {
         submitButton.click();
     }
 
-//    public String breadcrumbText() {
-//        return breadcrumbs.getText();
-//    }
+    public void goToLoginPage (){
+        wait.until(ExpectedConditions.visibilityOf(myAccountIcon));
+        myAccountIcon.click();
+        LoginButtonMyAccount.click();
+
+
+    }
+
 
 }
+
+
+

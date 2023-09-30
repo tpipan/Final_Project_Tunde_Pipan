@@ -52,17 +52,7 @@
             <version>5.4.1</version>
             <scope>test</scope>
         </dependency>
-        <!--        excell reader -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>5.2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>5.2.3</version>
-        </dependency>
+
         <!--    json object mapper-->
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <dependency>
@@ -82,23 +72,7 @@
             <version>2.3.1</version>
             <scope>runtime</scope>
         </dependency>
-        <!-- CSV Reader -->
-        <dependency>
-            <groupId>com.opencsv</groupId>
-            <artifactId>opencsv</artifactId>
-            <version>5.7.1</version>
-        </dependency>
-        <!-- EXCEL Reader -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>5.2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>5.2.3</version>
-        </dependency>
+
         <!-- mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
@@ -107,8 +81,18 @@
         </dependency>
 
 
+    <!--        extent reports -->
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+    <dependency>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports</artifactId>
+        <version>5.1.0</version>
+    </dependency>
 
-    </dependencies>
+
+
+
+</dependencies>
 
 
 

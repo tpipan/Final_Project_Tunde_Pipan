@@ -14,7 +14,7 @@
     "account": {
       "firstName": "Petru",
       "lastName": "Gheorghe",
-      "emailAddress": "test@google.com",
+      "emailAddress": "",
       "password": "parolaparola",
       "confirmPassword": "parolaparola"
     },

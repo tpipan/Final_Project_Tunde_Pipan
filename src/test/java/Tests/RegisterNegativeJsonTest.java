@@ -46,16 +46,6 @@ public class RegisterNegativeJsonTest extends BaseTest {
         mainPage.password.sendKeys(lm.getAccount().getPassword());
         mainPage.confirmation.sendKeys(lm.getAccount().getConfirmPassword());
 
-//        RegisterPage registerPage = new RegisterPage();
-//        TimeUnit.SECONDS.sleep(1);
-//        registerPage.newsletterCheckbox.click();
-//        registerPage.gdpr.click();
-//        registerPage.createAccount.click();
-
-
-//        System.out.println("Account + " + lm.getAccount());
-//        System.out.println("Email + " + lm.getAccount().getEmailAddress());
-
     }
 
 
