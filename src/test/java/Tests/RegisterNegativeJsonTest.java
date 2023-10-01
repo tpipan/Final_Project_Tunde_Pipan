@@ -4,6 +4,7 @@ import ObjectModel.RegisterModel;
 import PageObjects.MainPage;
 import PageObjects.RegisterPage;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.io.File;
@@ -40,15 +41,19 @@ public class RegisterNegativeJsonTest extends BaseTest {
         mainPage.registerButton.click();
         System.out.println(lm);
 
-        mainPage.firstname.sendKeys(lm.getAccount().getFirstName());
-        mainPage.lastname.sendKeys(lm.getAccount().getLastName());
-        mainPage.email_address.sendKeys(lm.getAccount().getEmailAddress());
-        mainPage.password.sendKeys(lm.getAccount().getPassword());
-        mainPage.confirmation.sendKeys(lm.getAccount().getConfirmPassword());
+        RegisterPage registerPage = new RegisterPage(driver);
 
+        registerPage.firstname.sendKeys(lm.getAccount().getFirstName());
+        registerPage.lastname.sendKeys(lm.getAccount().getLastName());
+        registerPage.email_address.sendKeys(lm.getAccount().getEmailAddress());
+        registerPage.password.sendKeys(lm.getAccount().getPassword());
+        registerPage.confirmation.sendKeys(lm.getAccount().getConfirmPassword());
+        registerPage.confirmationButton.click();
+
+        TimeUnit.SECONDS.sleep(1);
+
+
+        Assert.assertEquals(registerPage.getEmailError(), lm.getEmailError());
+        Assert.assertEquals(registerPage.getInvalidEmailError(), lm.getEmailError());
     }
-
-
-
-
 }

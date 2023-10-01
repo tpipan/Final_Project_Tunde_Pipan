@@ -21,7 +21,6 @@ import javax.xml.bind.annotation.XmlRootElement;
             this.passwordErr = passwordErr;
         }
 
-
         @Override
         public String toString() {
             return "LoginData{" +

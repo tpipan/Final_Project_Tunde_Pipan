@@ -1,5 +1,6 @@
 package PageObjects;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,10 +15,8 @@ public class MainPage {
 
     public static boolean registerButtonIsDisplayed;
 
-
     WebDriver driver;
     WebDriverWait wait;
-
 
     @FindBy(id = "search")
     public WebElement searchInput;
@@ -29,28 +28,11 @@ public class MainPage {
     @FindBy(css = ".page-header .mini-account i")
     public static WebElement myAccountIcon;
 
-    @FindBy(css = ".mini-account a.login-btn")
-    public WebElement loginButton;
     @FindBy(css = ".mini-account a#noaccount")
     public WebElement registerButton;
 
     @FindBy(css = ".mini-account a.login-btn")
     public WebElement LoginButtonMyAccount;
-
-    @FindBy(id = "firstname")
-    public WebElement firstname;
-
-    @FindBy(id = "lastname")
-    public WebElement lastname;
-
-    @FindBy(id = "email_address")
-    public WebElement email_address;
-
-    @FindBy(id = "password")
-    public WebElement password;
-
-    @FindBy(id = "confirmation")
-    public WebElement confirmation;
 
 
     public MainPage(WebDriver driver) {
@@ -80,10 +62,7 @@ public class MainPage {
         wait.until(ExpectedConditions.visibilityOf(myAccountIcon));
         myAccountIcon.click();
         LoginButtonMyAccount.click();
-
-
     }
-
 
 }
 
