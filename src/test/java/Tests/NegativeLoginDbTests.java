@@ -3,7 +3,6 @@ package Tests;
 import ObjectModel.NegativeLoginModel;
 import PageObjects.LoginPage;
 import PageObjects.MainPage;
-import PageObjects.SearchPage;
 import Utils.Tools;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -13,10 +12,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-import java.util.concurrent.TimeUnit;
 
 
-public class LoginDbTests extends BaseTest {
+public class NegativeLoginDbTests extends BaseTest {
 
     @DataProvider(name = "mysql")
     public Iterator<Object[]> mysqlDpCollection() throws Exception {

@@ -8,6 +8,9 @@ public class RegisterModel {
     private AccountModel account;
     private String emailError;
 
+    private String invalidEmailError;
+
+
 //    public RegisterModel(String firstName, String lastName, String emailAddress, String password, String confirmPassword, String emailError) {
 //        AccountModel accountM = new AccountModel();
 //        accountM.setFirstName(firstName);
@@ -37,6 +40,11 @@ public class RegisterModel {
         this.emailError = emailError;
     }
 
+    public String getInvalidEmailError() {
+        return invalidEmailError;
+    }
+
+
     @Override
     public String toString() {
         return "RegisterData{" +
@@ -44,7 +52,7 @@ public class RegisterModel {
                 ",emailAddress:" + account.getEmailAddress() + ",password:" + account.getPassword() +
                 ",confirmPassword:" + account.getConfirmPassword() +
                 "}, emailError='" + emailError + '\'' +
-                '}';
+                ", invalidEmailError='" + invalidEmailError + '}';
     }
 }
 

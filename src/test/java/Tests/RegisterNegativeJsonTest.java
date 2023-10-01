@@ -54,6 +54,6 @@ public class RegisterNegativeJsonTest extends BaseTest {
 
 
         Assert.assertEquals(registerPage.getEmailError(), lm.getEmailError());
-        Assert.assertEquals(registerPage.getInvalidEmailError(), lm.getEmailError());
+        Assert.assertEquals(registerPage.getInvalidEmailError(), lm.getInvalidEmailError());
     }
 }
