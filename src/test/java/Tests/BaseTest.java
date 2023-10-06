@@ -1,12 +1,12 @@
 package Tests;
 
 
-import PageObjects.MainPage;
+
 import Utils.BrowserUtils;
 import Utils.ConfigUtils;
 import Utils.ConstantUtils;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
@@ -39,11 +39,7 @@ public class BaseTest {
         driver = BrowserUtils.getBrowser(browser);
     }
 
-    public void goToRegisterPage(){
-        MainPage.myAccountIcon.click();
-        Assert.assertTrue(MainPage.registerButtonIsDisplayed);
 
-    }
 
     @BeforeMethod
     public void startBrowser() {
@@ -52,11 +48,11 @@ public class BaseTest {
         driver.get(baseUrl);
     }
 
-//    @AfterMethod(alwaysRun = true)
-//    public void cleanUp() {
-//        if (driver != null)
-//            driver.quit();
-//    }
+    @AfterMethod(alwaysRun = true)
+    public void cleanUp() {
+        if (driver != null)
+            driver.quit();
+    }
 
 
 }
