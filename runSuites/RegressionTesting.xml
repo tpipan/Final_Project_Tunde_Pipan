@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Default Suite">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+    </listeners>
+
     <test thread-count="5" name="Final_Project_Tnde_Pipan">
         <classes>
+            <class name="Tests.BaseTest"/>
+            <class name="Tests.NegativeLoginDbTests"/>
             <class name="Tests.AddToCartTest"/>
-            <class name="Tests.BaseTest"></class>
-            <class name="Tests.NegativeLoginDbTests"></class>
-            <class name="Tests.RegisterNegativeJsonTest"></class>
-            <class name="Tests.SearchbarTests"></class>
-            <class name="Tests.ValidLoginDbTests"></class>
-            <class name="Tests.WishlistTest"></class>
+            <class name="Tests.ValidLoginDbTests"/>
+            <class name="Tests.WishlistTest"/>
+            <class name="Tests.RegisterNegativeJsonTest"/>
+            <class name="Tests.SearchbarTests"/>
         </classes>
     </test> <!-- Final_Project_Tnde_Pipan -->
 </suite> <!-- Default Suite -->
-
-
