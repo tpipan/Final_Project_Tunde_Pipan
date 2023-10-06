@@ -20,7 +20,7 @@ public class CartPage {
     @FindBy(css = "#shopping-cart-table tr:first-of-type td.col-name h2.product-name")
     public WebElement firstProductTitle;
 
-    @FindBy(css = "#shopping-cart-table tr:first-of-type + tr td.col-qty input")
+    @FindBy(css = "#shopping-cart-table tr:nth-of-type(2) td.col-qty input")
     public WebElement firstProductQuantity;
 
     @FindBy(css = "#shopping-cart-table tr:first-of-type td.col-actions a.btn-remove")

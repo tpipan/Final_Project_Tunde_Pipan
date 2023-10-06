@@ -51,14 +51,5 @@ public class AccountModel {
         this.confirmPassword = confirmPassword;
     }
 
-//    @Override
-//    public String toString() {
-//        return "AccountModel{" +
-//                "firstName='" + firstName + '\'' +
-//                ", lastName='" + lastName + '\'' +
-//                ", emailAddress='" + emailAddress + '\'' +
-//                ", password='" + password + '\'' +
-//                ", confirmPassword='" + confirmPassword + '\'' +
-//                '}';
-//    }
+
 }

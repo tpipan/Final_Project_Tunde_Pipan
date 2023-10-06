@@ -11,17 +11,7 @@ public class RegisterModel {
     private String invalidEmailError;
 
 
-//    public RegisterModel(String firstName, String lastName, String emailAddress, String password, String confirmPassword, String emailError) {
-//        AccountModel accountM = new AccountModel();
-//        accountM.setFirstName(firstName);
-//        accountM.setLastName(lastName);
-//        accountM.setEmailAddress(emailAddress);
-//        accountM.setPassword(password);
-//        accountM.setConfirmPassword(confirmPassword);
-//
-//        this.account = accountM;
-//        this.emailError = emailError;
-//    }
+
 
     public AccountModel getAccount() {
         return account;
